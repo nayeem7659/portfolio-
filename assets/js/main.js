@@ -462,7 +462,9 @@ CSS TABLE OF CONTENTS
       $(".accordion-single .header-area").on("mouseout", function () {
         $(this).closest(".accordion-single").removeClass("active");
         $(this).next(".content-area").slideUp();
+        
       });
+      
       console.log(isTouchDevice());
     }
     // $(".accordion-single .header-area").on("mouseover", function () {
