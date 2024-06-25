@@ -462,11 +462,14 @@ CSS TABLE OF CONTENTS
       $(".accordion-single .header-area").on("mouseout", function () {
         $(this).closest(".accordion-single").removeClass("active");
         $(this).next(".content-area").slideUp();
-        
       });
-      
+
       console.log(isTouchDevice());
     }
+    $('#nav-tab .nav-link').hover(function() {
+      var tabTrigger = new bootstrap.Tab($(this));
+      tabTrigger.show();
+    });
     // $(".accordion-single .header-area").on("mouseover", function () {
 
     // 		$(".accordion-single").removeClass("active");

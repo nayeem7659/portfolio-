@@ -3048,8 +3048,8 @@ input.main-search-input::placeholder {
   color: var(--theme);
 }
 
-.service-tabing-wrap .images-remove-area {
-}
+/* .service-tabing-wrap .images-remove-area {
+} */
 .service-tabing-wrap .modern-list li {
   font-size: 16px;
   color: var(--white);
@@ -4311,10 +4311,10 @@ input.main-search-input::placeholder {
   -webkit-text-fill-color: transparent;
 }
 
-.case-study-section {
+/* .case-study-section {
   background: url(../img/team/team-stafbg.png) no-repeat center center;
   background-size: cover;
-}
+} */
 
 .onhover-tabbing-wrap .nav-tabs {
   display: grid;
@@ -4358,9 +4358,32 @@ input.main-search-input::placeholder {
 }
 .onhover-tabbing-wrap .tcase-thumb {
   width: 100%;
+  position: relative;
+}
+.onhover-tabbing-wrap .tcase-thumb::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  border-radius: 10px;
+  background: #2e2e2e;
+  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  display: inline-block;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .onhover-tabbing-wrap .tcase-thumb img {
   width: 100%;
+  border-radius: 10px;
 }
 @media (max-width: 500px) {
   .onhover-tabbing-wrap .nav-link {
